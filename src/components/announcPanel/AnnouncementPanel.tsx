@@ -2,17 +2,13 @@ import React, { useRef } from 'react';
 import styles from './announcPanel.module.scss';
 // import PersonIcon as svg
 import { ReactComponent as PersonIcon } from '../../assets/icons/person.svg';
+import { AnnouncementData } from '../../services/announcService';
 // i18n
 import { useTranslation } from 'react-i18next';
-interface IAnnouncementPanelProps {
-  data: {
-    _id: string;
-    topic: string;
-    author: string;
-    content: string;
-  }[];
-}
-const AnnouncementPanel: React.FC<IAnnouncementPanelProps> = ({ data }) => {
+
+const AnnouncementPanel: React.FC<{
+  data: AnnouncementData[];
+}> = ({ data }) => {
   const { t } = useTranslation();
 
   return (
@@ -31,7 +27,7 @@ const AnnouncementPanel: React.FC<IAnnouncementPanelProps> = ({ data }) => {
                 <h3>{item.topic}</h3>
               </div>
             </div>
-            <p>{item.content}</p>
+            <p className={styles.content}>{item.content}</p>
           </div>
         ))}
       </section>

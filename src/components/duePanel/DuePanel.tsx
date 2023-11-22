@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import styles from './duePanel.module.scss';
 // i18n
 import { useTranslation } from 'react-i18next';
@@ -6,18 +6,14 @@ import { useTranslation } from 'react-i18next';
 // import time sand svg
 import { ReactComponent as TimeSandIcon } from '../../assets/icons/time-sand.svg';
 import { CustomButton } from '../UI/button/CustomButtonA';
-interface IDuePanelProps {
-  data: {
-    _id: string;
-    name: string;
-    course: string;
-    topic: string;
-    dueTo: string;
-  }[];
-}
-const DuePanel: React.FC<IDuePanelProps> = ({ data }) => {
+import { QuizData } from '../../services/quizService';
+
+const DuePanel: React.FC<{ data: QuizData[] }> = ({ data }) => {
   const { t } = useTranslation();
 
+  useEffect(() => {
+    console.log(data);
+  }, []);
   return (
     <div className={styles.container}>
       <header className={styles['header-inside']}>

@@ -48,7 +48,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   .person-info {
     display: flex;
     flex-direction: row;
@@ -61,6 +61,8 @@
       p {
         margin: 0;
         padding: 0;
+        display: block;
+
         font-size: 16px;
       }
       h3 {
@@ -70,8 +72,18 @@
       }
     }
   }
-  p {
+  .content {
     margin: 0;
     margin-left: 5px;
+    overflow: hidden;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: $mobile-view-width) {
+  .container {
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 10px;
   }
 }
