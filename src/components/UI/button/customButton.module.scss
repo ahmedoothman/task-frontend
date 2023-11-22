@@ -1,0 +1,142 @@
+@import '../../../sass/base.scss';
+.primary-filled {
+  font-family: $font-main;
+  font-size: 20px;
+  padding: 5px 20px;
+  background-color: $color-primary;
+  color: $color-white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: $shadow-primary;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    font-family: $font-main;
+    font-size: 20px;
+    background-color: $color-secondary;
+  }
+}
+.secondary-filled {
+  font-family: $font-main;
+  font-size: 20px;
+  padding: 5px 20px;
+  background-color: $color-secondary;
+  color: $color-white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: $shadow-primary;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    font-family: $font-main;
+    font-size: 20px;
+    background-color: $color-primary;
+  }
+}
+.tertiary-filled {
+  font-family: $font-main;
+  font-size: 20px;
+  padding: 5px 20px;
+  background-color: $color-tertiary;
+  color: $color-white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: $shadow-primary;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    font-family: $font-main;
+    font-size: 20px;
+    background-color: $color-secondary;
+  }
+}
+.white-filled {
+  font-family: $font-main;
+  font-size: 20px;
+  padding: 5px 20px;
+  background-color: $color-white;
+  color: $color-primary;
+  border: none;
+  border-radius: 5px;
+  box-shadow: $shadow-primary;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    font-family: $font-main;
+    font-size: 20px;
+    background-color: $color-secondary;
+    color: $color-white;
+  }
+}
+.primary-outlined {
+  font-family: $font-main;
+  font-size: 20px;
+  padding: 5px 20px;
+  background-color: transparent;
+  color: $color-primary;
+  border: 2px solid $color-primary;
+  border-radius: 5px;
+  box-shadow: $shadow-primary;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    font-family: $font-main;
+    font-size: 20px;
+    background-color: $color-primary;
+    color: $color-white;
+  }
+}
+.secondary-outlined {
+  font-family: $font-main;
+  font-size: 20px;
+  padding: 5px 20px;
+  background-color: transparent;
+  color: $color-secondary;
+  border: 2px solid $color-secondary;
+  border-radius: 5px;
+  box-shadow: $shadow-primary;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    font-family: $font-main;
+    font-size: 20px;
+    background-color: $color-secondary;
+    color: $color-white;
+  }
+}
+.tertiary-outlined {
+  font-family: $font-main;
+  font-size: 20px;
+  padding: 5px 20px;
+  background-color: transparent;
+  color: $color-tertiary;
+  border: 2px solid $color-tertiary;
+  border-radius: 5px;
+  box-shadow: $shadow-primary;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    font-family: $font-main;
+    font-size: 20px;
+    background-color: $color-secondary;
+    color: $color-white;
+  }
+}
+.white-outlined {
+  font-family: $font-main;
+  font-size: 20px;
+  padding: 5px 20px;
+  background-color: transparent;
+  color: $color-white;
+  border: 2px solid $color-white;
+  border-radius: 5px;
+  box-shadow: $shadow-primary;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    font-family: $font-main;
+    font-size: 20px;
+    background-color: $color-secondary;
+    color: $color-white;
+  }
+}

@@ -1,0 +1,16 @@
+@import '../../sass/base.scss';
+.container {
+  background-color: $color-white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+}
+.welcome-message {
+  font-size: 25px;
+  color: transparent;
+  background: $gradient-secondary;
+  -webkit-background-clip: text;
+}

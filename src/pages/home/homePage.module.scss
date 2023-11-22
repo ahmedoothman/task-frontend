@@ -1,0 +1,27 @@
+@import '../../sass/base.scss';
+.container {
+  background: $gradient-secondary;
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $color-white;
+  h1 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 45px;
+  }
+  p {
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+  }
+}
+.change-lang {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

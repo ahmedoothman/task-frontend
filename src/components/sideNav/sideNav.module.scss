@@ -1,0 +1,90 @@
+@import '../../sass/base.scss';
+.icon {
+  width: 40px;
+  height: 40px;
+  fill: $color-white;
+  color: $color-white;
+  stroke: $color-primary;
+}
+
+.container {
+  background: $gradient-primary;
+  min-height: 100vh;
+  height: 100%;
+  flex-grow: 1;
+  width: 250px;
+  ul {
+    margin: 0;
+    margin-bottom: 30px;
+    list-style: none;
+    padding: 0;
+    li {
+      margin-bottom: 15px;
+    }
+  }
+}
+.normal-tab {
+  text-decoration: none;
+  color: $color-white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: $color-white;
+    color: $color-primary;
+    .icon {
+      fill: $color-primary;
+      color: $color-primary;
+      stroke: $color-white;
+    }
+  }
+  svg {
+    margin-right: 10px;
+  }
+}
+
+.active-tab {
+  text-decoration: none;
+  color: $color-primary;
+  background-color: $color-white;
+  box-shadow: $shadow-secondary;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 18px;
+
+  .icon {
+    fill: $color-primary;
+    color: $color-primary;
+    stroke: $color-white;
+  }
+  svg {
+    margin-right: 10px;
+  }
+}
+.header {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  h1 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    color: $color-white;
+    font-size: 35px;
+  }
+}
+.lang-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

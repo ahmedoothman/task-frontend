@@ -1,0 +1,25 @@
+@import '../../../sass/base.scss';
+.icon {
+  color: $color-primary;
+  width: 20px;
+  height: 20px;
+  stroke: $color-primary;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.container {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid $color-primary;
+  border-radius: 10px;
+  input {
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+}

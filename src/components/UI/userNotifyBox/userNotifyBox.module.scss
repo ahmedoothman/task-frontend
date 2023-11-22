@@ -1,0 +1,51 @@
+@import '../../../sass/base.scss';
+.icon {
+  fill: $color-primary;
+  width: 25px;
+  height: 25px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  min-width: 120px;
+  width: fit-content;
+  div {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    span {
+      background-color: $color-tertiary;
+      color: $color-white;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 10px;
+    }
+    p {
+      margin: 0;
+      margin-left: 5px;
+      padding: 0px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: $color-secondary;
+      }
+    }
+  }
+}

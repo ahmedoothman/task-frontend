@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
+
+$font-main: 'Cairo', sans-serif;
+
+$color-primary: #165873;
+$color-secondary: #3c8399;
+$color-tertiary: #4bbfb4;
+$color-background: #f2f2f2;
+$color-white: #fffefe;
+
+$gradient-primary: linear-gradient(to bottom, #165873, #3c8399);
+$gradient-secondary: linear-gradient(to right, #165873, #3c8399);
+
+$shadow-primary: 3px 3px 6px rgba(0, 0, 0, 0.1);
+$shadow-secondary: 2px 2px 3px rgba(0, 0, 0, 0.3);
+
+$mobile-view-width: 768px;
